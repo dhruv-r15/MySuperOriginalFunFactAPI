@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  funfactapi:
+    image: ${DOCKER_REGISTRY-}funfactapi
+    build:
+      context: .
+      dockerfile: FunFactAPI\Dockerfile
